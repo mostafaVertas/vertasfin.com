@@ -43,3 +43,23 @@ footer {
   font-size: 14px;
   background-color: #ececec;
 }
+
+
+.blog {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.post-preview {
+  margin-bottom: 30px;
+}
+
+.post-preview h3 a {
+  color: #0a3d62;
+  text-decoration: none;
+}
+
+.post-preview p {
+  color: #555;
+}
+
