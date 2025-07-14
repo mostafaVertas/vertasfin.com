@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Vertas Financial Consultancy</title>
+    <meta name="description" content="Financial insights, expert analysis, and strategic guidance from Vertas Financial Consultancy.">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5EV8162CXQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5EV8162CXQ');
+    </script>
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+        .blog-hero {
+            background: linear-gradient(135deg, #2c5282, #3182ce);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        .blog-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .blog-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .blog-content {
+            padding: 80px 0;
+        }
+        .blog-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .breadcrumb {
+            padding: 20px 0;
+            background: #f7fafc;
+            margin-top: 70px;
+        }
+        .breadcrumb a {
+            color: #2c5282;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .ai-series {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f7fafc;
+            border-radius: 8px;
+            border-left: 4px solid #3182ce;
+        }
+        .ai-series a {
+            display: block;
+            color: #2c5282;
+            text-decoration: none;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        .ai-series a:last-child {
+            border-bottom: none;
+        }
+        .ai-series a:hover {
+            color: #3182ce;
+            padding-left: 0.5rem;
+            background: rgba(49, 130, 206, 0.1);
+        }
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        .blog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .blog-category {
+            background: linear-gradient(135deg, #2c5282, #3182ce);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .blog-date {
+            color: #718096;
+            font-size: 0.875rem;
+        }
+        .blog-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        .blog-card h3 a {
+            color: #2d3748;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .blog-card h3 a:hover {
+            color: #3182ce;
+        }
+        .blog-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .read-more {
+            color: #3182ce;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        .read-more:hover {
+            color: #2c5282;
+            gap: 0.75rem;
+        }
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2rem;
+            }
+            .blog-list {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .blog-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Vertas</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link cta-button">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> / <span>Blog</span>
+        </div>
+    </section>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Financial Insights & Expertise</h1>
+            <p>Stay informed with the latest trends, strategies, and insights in financial management and business advisory.</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-list">
+                <article class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">FP&A</span>
+                        <span class="blog-date">January 2025</span>
+                    </div>
+                    <h3><a href="gross-margin-strategic-decisions.html">Why Gross Margin Matters More Than You Think</a></h3>
+                    <p>Understand how gross margin can make or break your strategic decisions. We break it down with real-world use cases and practical examples for CFOs and finance teams.</p>
+                    <a href="gross-margin-strategic-decisions.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">Reporting</span>
+                        <span class="blog-date">December 2024</span>
+                    </div>
+                    <h3><a href="5-fpa-reports-monthly.html">5 FP&A Reports You Must Produce Monthly</a></h3>
+                    <p>Learn why these 5 reports separate reactive businesses from strategic ones. We break down each with practical insights that modern FP&A teams can apply immediately.</p>
+                    <a href="5-fpa-reports-monthly.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">Leadership</span>
+                        <span class="blog-date">December 2024</span>
+                    </div>
+                    <h3><a href="finance-leadership-turbulent-times.html">Finance Leadership in Turbulent Times</a></h3>
+                    <p>Discover how finance leaders across the Middle East can transform volatility into opportunity. We explore lessons from past conflicts and break down practical actions CFOs must take today.</p>
+                    <a href="finance-leadership-turbulent-times.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">Treasury</span>
+                        <span class="blog-date">November 2024</span>
+                    </div>
+                    <h3><a href="fx-risk-middle-east-cfo-strategy.html">Hard Currency Playbook</a></h3>
+                    <p>Learn why a well-structured FX plan separates proactive companies from reactive ones. Essential reading for CFOs managing currency risk in volatile markets.</p>
+                    <a href="fx-risk-middle-east-cfo-strategy.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">Cash Flow</span>
+                        <span class="blog-date">November 2024</span>
+                    </div>
+                    <h3><a href="why-profit-is-not-cash.html">Profit Looks Fine. So Why Are We Out of Cash?</a></h3>
+                    <p>Many businesses show profits on paper but struggle to pay suppliers or meet payroll. This article explains why and shows CFOs how to spot, fix, and prevent the disconnect.</p>
+                    <a href="why-profit-is-not-cash.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-meta">
+                        <span class="blog-category">AI Series</span>
+                        <span class="blog-date">October 2024</span>
+                    </div>
+                    <h3>AI's Role in Finance: 5 Trends Every CFO Should Watch</h3>
+                    <p>AI is transforming how finance teams forecast, control costs, manage cash, and fight fraud. Explore the most impactful AI applications for modern CFOs.</p>
+                    <div class="ai-series">
+                        <a href="ai-powered-forecasting.html">1. AI in Forecasting & Scenario Planning</a>
+                        <a href="intelligent-spend-optimization.html">2. Intelligent Spend Optimization</a>
+                        <a href="cash-visibility-treasury-automation.html">3. Real-Time Cash Visibility</a>
+                        <a href="automated-compliance-reporting.html">4. Automated Compliance & Reporting</a>
+                        <a href="strategic-decision-support.html">5. Strategic Decision Support</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Vertas Financial Consultancy</span>
+                    </div>
+                    <p>Empowering smarter financial decisions through strategic expertise and system-driven insights.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="../index.html#services">Financial Planning & Analysis</a></li>
+                        <li><a href="../index.html#services">Treasury Management</a></li>
+                        <li><a href="../index.html#services">Accounting & Reporting</a></li>
+                        <li><a href="../index.html#services">ERP Systems</a></li>
+                        <li><a href="../index.html#services">Tax Advisory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../index.html#about">About Us</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> mostafa@vertasfin.com</li>
+                        <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vertas Financial Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+
