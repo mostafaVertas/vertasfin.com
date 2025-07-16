@@ -1,83 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI-Augmented FP&A | AI’s Role in Finance – Vertas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Discover how AI is transforming FP&A teams. Explore tools and techniques that enhance forecasting, analysis, and business decision-making.">
-  <link rel="stylesheet" href="../style.css" />
 
-  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5EV8162CXQ"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-5EV8162CXQ');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5EV8162CXQ');
   </script>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="../favicon.png" />
+
+  <style>
+    .article-hero {
+        background: linear-gradient(135deg, #2c5282, #3182ce);
+        color: white;
+        padding: 120px 0 80px;
+    }
+    .article-content {
+        padding: 80px 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .article-meta {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .article-content h2 {
+        color: #2c5282;
+        font-size: 1.8rem;
+        margin: 2rem 0 1rem 0;
+    }
+    .article-content h3 {
+        color: #2c5282;
+        font-size: 1.4rem;
+        margin: 1.5rem 0 1rem 0;
+    }
+    .article-content p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+        color: #4a5568;
+    }
+    .article-content ul, .article-content ol {
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+    }
+    .article-content li {
+        margin-bottom: 0.5rem;
+        color: #4a5568;
+        line-height: 1.6;
+    }
+    blockquote {
+        background: #f7fafc;
+        border-left: 4px solid #2c5282;
+        padding: 1rem;
+        font-style: italic;
+        color: #2d3748;
+        margin: 1.5rem 0;
+    }
+    .cta-section {
+        background: #f7fafc;
+        padding: 3rem;
+        border-radius: 12px;
+        text-align: center;
+        margin: 3rem 0;
+    }
+    .breadcrumb {
+        padding: 20px 0;
+        background: #f7fafc;
+        margin-top: 70px;
+    }
+    .breadcrumb a {
+        color: #2c5282;
+        text-decoration: none;
+    }
+    .breadcrumb a:hover {
+        text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-  <header class="hero">
-    <h1>AI-Augmented FP&A</h1>
-    <p>Trend 4 of 5 – AI’s Role in Finance | Published July 3, 2025</p>
-  </header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html"><i class="fas fa-chart-line"></i><span>Vertas</span></a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="../index.html#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link cta-button">Get Started</a></li>
+      </ul>
+      <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+    </div>
+  </nav>
 
-  <section>
-    <p>FP&A teams are no longer just budget owners — they’re becoming strategic enablers. But with rising complexity and speed, traditional forecasting and variance reporting can’t keep up. Enter: AI-augmented FP&A.</p>
-
-    <p>In this post, we explore how AI helps finance teams shift from backward-looking analysis to forward-looking insight — faster, deeper, and more interactively.</p>
-
-    <h2>1. What AI-Augmented FP&A Really Means</h2>
-    <ul>
-      <li>⚡ Instant scenario modeling and budget versioning</li>
-      <li>📈 Predictive analysis for revenue, OPEX, and churn</li>
-      <li>📊 NLP-based dashboards where you ask, “What changed in marketing spend last month?”</li>
-    </ul>
-    <p>AI doesn’t replace human finance experts — it enhances their speed and reach.</p>
-
-    <h2>2. Tools Powering AI-Augmented FP&A</h2>
-    <ul>
-      <li><strong>Anaplan AI</strong> – Forecasting and “what-if” modeling</li>
-      <li><strong>Power BI + Azure Cognitive Services</strong> – Predictive visuals and NLP queries</li>
-      <li><strong>ChatGPT Enterprise</strong> – Assumption commentary, narrative generation, and logic suggestion</li>
-    </ul>
-
-    <p>These tools connect models to business logic in real time.</p>
-
-    <h2>3. Use Case: Board-Ready Forecasts in 48 Hours</h2>
-    <p>A financial services firm in Cairo automated its forecasting workflow using ChatGPT + Power BI + Excel integration. Result?</p>
-    <ul>
-      <li>Reduced model build time from 10 days to 2</li>
-      <li>Included automated narrative generation by GPT</li>
-      <li>Linked inputs directly to revenue, churn, and CAC assumptions</li>
-    </ul>
-    <p>Every board member received a personalized forecast pack — fully AI-assisted.</p>
-
-    <h2>4. ChatGPT for Planning Intelligence</h2>
-    <blockquote><em>“Suggest 3 alternative growth plans if Q3 revenue drops by 10%.”</em></blockquote>
-    <blockquote><em>“Create 2 commentary narratives for variance: one conservative, one aggressive.”</em></blockquote>
-    <p>ChatGPT becomes your FP&A co-pilot — especially during board prep or reforecasting windows.</p>
-
-    <h2>5. Risks and Watchouts</h2>
-    <ul>
-      <li>🛑 Lack of context: AI must use finance assumptions, not guess</li>
-      <li>🛑 Version control: Ensure auditability of AI-modified scenarios</li>
-      <li>🛑 Overreliance: FP&A still needs business challenge, not just data</li>
-    </ul>
-    <p>Use AI to enhance — not automate — financial thinking.</p>
-
-    <h2>Conclusion: FP&A’s New Edge</h2>
-    <p>With AI, FP&A teams can finally focus on the “why” — not just the “what.” Forecasting becomes faster, reporting becomes smarter, and decision support becomes strategic.</p>
-
-    <p><strong>Next in the Series:</strong> <a href="ai-finance-compliance-fraud.html">Trend 5 – AI for Compliance & Fraud Detection</a></p>
-
-    <p><strong>📩 Want to upgrade your FP&A process with AI?</strong> <a href="mailto:mostafa@vertasfin.com">Let’s talk.</a></p>
+  <section class="breadcrumb">
+    <div class="container">
+      <a href="../index.html">Home</a> / <a href="index.html">Blog</a> / <span>AI-Augmented FP&A</span>
+    </div>
   </section>
 
-  <footer>
-    <p><a href="../index.html">← Back to Home</a></p>
-    <p>&copy; 2025 Vertas Financial Consultancy. All rights reserved.</p>
+  <section class="article-hero">
+    <div class="container">
+      <div class="article-meta">
+        <span><i class="fas fa-calendar"></i> July 3, 2025</span>
+        <span><i class="fas fa-tag"></i> AI & Finance</span>
+        <span><i class="fas fa-clock"></i> 6 min read</span>
+      </div>
+      <h1>AI-Augmented FP&A</h1>
+      <p>Trend 4 of 5 – AI’s Role in Finance</p>
+    </div>
+  </section>
+
+  <section class="article-content">
+    <div class="container">
+      <p>FP&A teams are no longer just budget owners — they’re becoming strategic enablers. But with rising complexity and speed, traditional forecasting and variance reporting can’t keep up. Enter: AI-augmented FP&A.</p>
+
+      <p>In this post, we explore how AI helps finance teams shift from backward-looking analysis to forward-looking insight — faster, deeper, and more interactively.</p>
+
+      <h2>1. What AI-Augmented FP&A Really Means</h2>
+      <ul>
+        <li>⚡ Instant scenario modeling and budget versioning</li>
+        <li>📈 Predictive analysis for revenue, OPEX, and churn</li>
+        <li>📊 NLP-based dashboards where you ask, “What changed in marketing spend last month?”</li>
+      </ul>
+      <p>AI doesn’t replace human finance experts — it enhances their speed and reach.</p>
+
+      <h2>2. Tools Powering AI-Augmented FP&A</h2>
+      <ul>
+        <li><strong>Anaplan AI</strong> – Forecasting and “what-if” modeling</li>
+        <li><strong>Power BI + Azure Cognitive Services</strong> – Predictive visuals and NLP queries</li>
+        <li><strong>ChatGPT Enterprise</strong> – Assumption commentary, narrative generation, and logic suggestion</li>
+      </ul>
+
+      <p>These tools connect models to business logic in real time.</p>
+
+      <h2>3. Use Case: Board-Ready Forecasts in 48 Hours</h2>
+      <p>A financial services firm in Cairo automated its forecasting workflow using ChatGPT + Power BI + Excel integration. Result?</p>
+      <ul>
+        <li>Reduced model build time from 10 days to 2</li>
+        <li>Included automated narrative generation by GPT</li>
+        <li>Linked inputs directly to revenue, churn, and CAC assumptions</li>
+      </ul>
+      <p>Every board member received a personalized forecast pack — fully AI-assisted.</p>
+
+      <h2>4. ChatGPT for Planning Intelligence</h2>
+      <blockquote>“Suggest 3 alternative growth plans if Q3 revenue drops by 10%.”</blockquote>
+      <blockquote>“Create 2 commentary narratives for variance: one conservative, one aggressive.”</blockquote>
+      <p>ChatGPT becomes your FP&A co-pilot — especially during board prep or reforecasting windows.</p>
+
+      <h2>5. Risks and Watchouts</h2>
+      <ul>
+        <li>🛑 Lack of context: AI must use finance assumptions, not guess</li>
+        <li>🛑 Version control: Ensure auditability of AI-modified scenarios</li>
+        <li>🛑 Overreliance: FP&A still needs business challenge, not just data</li>
+      </ul>
+      <p>Use AI to enhance — not automate — financial thinking.</p>
+
+      <h2>Conclusion: FP&A’s New Edge</h2>
+      <p>With AI, FP&A teams can finally focus on the “why” — not just the “what.” Forecasting becomes faster, reporting becomes smarter, and decision support becomes strategic.</p>
+
+      <div class="cta-section">
+        <h3>Upgrade Your FP&A with AI</h3>
+        <p>We help finance teams integrate AI into their planning, forecasting, and reporting. Let’s build a smarter FP&A function together.</p>
+        <a href="../index.html#contact" class="cta-button">Start Your AI Journey</a>
+      </div>
+
+      <p><strong>Next in the Series:</strong> <a href="ai-finance-compliance-fraud.html">Trend 5 – AI for Compliance & Fraud Detection</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-chart-line"></i>
+            <span>Vertas Financial Consultancy</span>
+          </div>
+          <p>Empowering smarter financial decisions through strategic expertise and system-driven insights.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="../index.html#services">Financial Planning & Analysis</a></li>
+            <li><a href="../index.html#services">Treasury Management</a></li>
+            <li><a href="../index.html#services">Accounting & Reporting</a></li>
+            <li><a href="../index.html#services">ERP Systems</a></li>
+            <li><a href="../index.html#services">Tax Advisory</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="../index.html#about">About Us</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> mostafa@vertasfin.com</li>
+            <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
+            <li><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Vertas Financial Consultancy. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>
