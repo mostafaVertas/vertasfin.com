@@ -1,86 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI for Compliance & Fraud Detection | AI’s Role in Finance – Vertas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explore how AI is helping finance teams detect fraud and automate compliance in real time. Learn about the tools transforming risk and audit functions.">
-  <link rel="stylesheet" href="../style.css" />
 
-  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5EV8162CXQ"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-5EV8162CXQ');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5EV8162CXQ');
   </script>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="../favicon.png" />
+
+  <style>
+    .article-hero {
+        background: linear-gradient(135deg, #2c5282, #3182ce);
+        color: white;
+        padding: 120px 0 80px;
+    }
+    .article-content {
+        padding: 80px 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .article-meta {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .article-content h2 {
+        color: #2c5282;
+        font-size: 1.8rem;
+        margin: 2rem 0 1rem 0;
+    }
+    .article-content h3 {
+        color: #2c5282;
+        font-size: 1.4rem;
+        margin: 1.5rem 0 1rem 0;
+    }
+    .article-content p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+        color: #4a5568;
+    }
+    .article-content ul, .article-content ol {
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+    }
+    .article-content li {
+        margin-bottom: 0.5rem;
+        color: #4a5568;
+        line-height: 1.6;
+    }
+    blockquote {
+        background: #f7fafc;
+        border-left: 4px solid #2c5282;
+        padding: 1rem;
+        font-style: italic;
+        color: #2d3748;
+        margin: 1.5rem 0;
+    }
+    .cta-section {
+        background: #f7fafc;
+        padding: 3rem;
+        border-radius: 12px;
+        text-align: center;
+        margin: 3rem 0;
+    }
+    .breadcrumb {
+        padding: 20px 0;
+        background: #f7fafc;
+        margin-top: 70px;
+    }
+    .breadcrumb a {
+        color: #2c5282;
+        text-decoration: none;
+    }
+    .breadcrumb a:hover {
+        text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-  <header class="hero">
-    <h1>AI for Compliance & Fraud Detection</h1>
-    <p>Trend 5 of 5 – AI’s Role in Finance | Published July 3, 2025</p>
-  </header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html"><i class="fas fa-chart-line"></i><span>Vertas</span></a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="../index.html#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link cta-button">Get Started</a></li>
+      </ul>
+      <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+    </div>
+  </nav>
 
-  <section>
-    <p>In the past, compliance and fraud detection were reactive: long audits, post-event investigations, and endless policy spreadsheets. Today, AI brings speed, accuracy, and pattern recognition to risk and compliance.</p>
-
-    <h2>1. Why AI Matters in Risk & Control</h2>
-    <p>AI models detect outliers and patterns humans can’t — in seconds. Whether it’s duplicate payments, suspicious vendor behavior, or overlooked tax exposures, AI delivers:</p>
-    <ul>
-      <li>⚠️ Early fraud detection</li>
-      <li>📜 Automated compliance reviews</li>
-      <li>🔍 Audit-ready logs and anomaly tagging</li>
-    </ul>
-
-    <h2>2. Leading Tools in AI Compliance</h2>
-    <ul>
-      <li><strong>MindBridge AI</strong> – Risk scoring and journal entry anomaly detection</li>
-      <li><strong>Datarails AI Risk Module</strong> – Real-time control dashboards</li>
-      <li><strong>ChatGPT (Custom GPTs)</strong> – Simulated policy testing, gap analysis, audit prep</li>
-    </ul>
-
-    <p>These tools use machine learning on historical finance data to flag risks proactively — not after the audit.</p>
-
-    <h2>3. Real Example: AI Catches What Humans Miss</h2>
-    <p>A Gulf-based retail chain detected 2 recurring vendor overpayments across 4 branches using MindBridge. The issue was hidden in manual journal aggregation. AI caught the anomaly in <em>less than 2 minutes</em>.</p>
-
-    <p>This triggered a supplier review and new approval workflow — avoiding over 600K EGP in repeated losses.</p>
-
-    <h2>4. How ChatGPT Supports Internal Audit</h2>
-    <blockquote><em>“Simulate three scenarios where our expense approval policy may be violated and draft audit recommendations.”</em></blockquote>
-    <p>GPT-generated outputs helped auditors test policy logic before a single transaction was reviewed. This enhanced preparedness and improved documentation clarity.</p>
-
-    <h2>5. Power BI + AI Alerts</h2>
-    <p>Using AI visuals, teams can show:</p>
-    <ul>
-      <li>🧾 Vendor fraud heatmaps</li>
-      <li>💡 Expense spikes with deviation logic</li>
-      <li>📥 Risk-tiered AP/AR movement alerts</li>
-    </ul>
-    <p>Alerts and reports integrate directly with internal audit functions.</p>
-
-    <h2>6. Risk: AI Isn’t a Control. It’s an Assistant.</h2>
-    <ul>
-      <li>🛑 AI doesn’t “approve” — controls still need human oversight</li>
-      <li>🛑 False positives require reviewer training</li>
-      <li>🛑 Data must be clean and permissioned</li>
-    </ul>
-
-    <p>Think of AI as a risk early-warning system — not a full decision-maker.</p>
-
-    <h2>Conclusion: Risk Becomes Real-Time</h2>
-    <p>With AI, risk detection moves from after-the-fact to now. CFOs and compliance teams can stop reacting and start monitoring — continuously and strategically.</p>
-
-    <p><strong>Want to start from the beginning?</strong> <a href="ai-powered-forecasting.html">Trend 1 – AI in Forecasting & Scenario Planning</a></p>
-
-    <p><strong>📩 Need help applying AI to compliance or fraud monitoring?</strong> <a href="mailto:mostafa@vertasfin.com">Let’s talk.</a></p>
+  <section class="breadcrumb">
+    <div class="container">
+      <a href="../index.html">Home</a> / <a href="index.html">Blog</a> / <span>AI for Compliance & Fraud Detection</span>
+    </div>
   </section>
 
-  <footer>
-    <p><a href="../index.html">← Back to Home</a></p>
-    <p>&copy; 2025 Vertas Financial Consultancy. All rights reserved.</p>
+  <section class="article-hero">
+    <div class="container">
+      <div class="article-meta">
+        <span><i class="fas fa-calendar"></i> July 3, 2025</span>
+        <span><i class="fas fa-tag"></i> Risk & Compliance</span>
+        <span><i class="fas fa-clock"></i> 5 min read</span>
+      </div>
+      <h1>AI for Compliance & Fraud Detection</h1>
+      <p>Trend 5 of 5 – AI’s Role in Finance</p>
+    </div>
+  </section>
+
+  <section class="article-content">
+    <div class="container">
+      <p>In the past, compliance and fraud detection were reactive: long audits, post-event investigations, and endless policy spreadsheets. Today, AI brings speed, accuracy, and pattern recognition to risk and compliance.</p>
+
+      <h2>1. Why AI Matters in Risk & Control</h2>
+      <p>AI models detect outliers and patterns humans can’t — in seconds. Whether it’s duplicate payments, suspicious vendor behavior, or overlooked tax exposures, AI delivers:</p>
+      <ul>
+        <li>⚠️ Early fraud detection</li>
+        <li>📜 Automated compliance reviews</li>
+        <li>🔍 Audit-ready logs and anomaly tagging</li>
+      </ul>
+
+      <h2>2. Leading Tools in AI Compliance</h2>
+      <ul>
+        <li><strong>MindBridge AI</strong> – Risk scoring and journal entry anomaly detection</li>
+        <li><strong>Datarails AI Risk Module</strong> – Real-time control dashboards</li>
+        <li><strong>ChatGPT (Custom GPTs)</strong> – Simulated policy testing, gap analysis, audit prep</li>
+      </ul>
+
+      <p>These tools use machine learning on historical finance data to flag risks proactively — not after the audit.</p>
+
+      <h2>3. Real Example: AI Catches What Humans Miss</h2>
+      <p>A Gulf-based retail chain detected 2 recurring vendor overpayments across 4 branches using MindBridge. The issue was hidden in manual journal aggregation. AI caught the anomaly in <em>less than 2 minutes</em>.</p>
+
+      <p>This triggered a supplier review and new approval workflow — avoiding over 600K EGP in repeated losses.</p>
+
+      <h2>4. How ChatGPT Supports Internal Audit</h2>
+      <blockquote>“Simulate three scenarios where our expense approval policy may be violated and draft audit recommendations.”</blockquote>
+      <p>GPT-generated outputs helped auditors test policy logic before a single transaction was reviewed. This enhanced preparedness and improved documentation clarity.</p>
+
+      <h2>5. Power BI + AI Alerts</h2>
+      <p>Using AI visuals, teams can show:</p>
+      <ul>
+        <li>🧾 Vendor fraud heatmaps</li>
+        <li>💡 Expense spikes with deviation logic</li>
+        <li>📥 Risk-tiered AP/AR movement alerts</li>
+      </ul>
+      <p>Alerts and reports integrate directly with internal audit functions.</p>
+
+      <h2>6. Risk: AI Isn’t a Control. It’s an Assistant.</h2>
+      <ul>
+        <li>🛑 AI doesn’t “approve” — controls still need human oversight</li>
+        <li>🛑 False positives require reviewer training</li>
+        <li>🛑 Data must be clean and permissioned</li>
+      </ul>
+
+      <p>Think of AI as a risk early-warning system — not a full decision-maker.</p>
+
+      <h2>Conclusion: Risk Becomes Real-Time</h2>
+      <p>With AI, risk detection moves from after-the-fact to now. CFOs and compliance teams can stop reacting and start monitoring — continuously and strategically.</p>
+
+      <div class="cta-section">
+        <h3>Let’s Build Smarter Compliance Together</h3>
+        <p>Our team helps implement AI tools that automate compliance and reveal hidden risks. Start modernizing your control systems today.</p>
+        <a href="../index.html#contact" class="cta-button">Get a Free Compliance Review</a>
+      </div>
+
+      <p><strong>Want to start from the beginning?</strong> <a href="ai-powered-forecasting.html">Trend 1 – AI in Forecasting & Scenario Planning</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-chart-line"></i>
+            <span>Vertas Financial Consultancy</span>
+          </div>
+          <p>Empowering smarter financial decisions through strategic expertise and system-driven insights.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="../index.html#services">Financial Planning & Analysis</a></li>
+            <li><a href="../index.html#services">Treasury Management</a></li>
+            <li><a href="../index.html#services">Accounting & Reporting</a></li>
+            <li><a href="../index.html#services">ERP Systems</a></li>
+            <li><a href="../index.html#services">Tax Advisory</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="../index.html#about">About Us</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> mostafa@vertasfin.com</li>
+            <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
+            <li><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Vertas Financial Consultancy. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>
